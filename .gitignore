@@ -18,3 +18,4 @@ dist
 .pants.workdir.file_lock
 .idea
 *.iml
+.cache
