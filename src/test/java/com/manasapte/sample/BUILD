@@ -1,9 +1,10 @@
 junit_tests(
   name = "sample",
   sources = globs(
-    'app/*.java'
+    'resource/*.java'
   ),
   dependencies = [
-    '3rdparty/java/junit'
+    '3rdparty/java/junit',
+    'src/main/java/com/manasapte/sample'
   ]
 )

@@ -3,10 +3,12 @@ java_library(
   sources = globs(
     'app/*.java',
     'resource/*.java',
-    'config/*.java'
+    'config/*.java',
+    'protocol/*.java'
   ),
   dependencies = [
-    '3rdparty/java/io/dropwizard:dropwizard-core'
+    '3rdparty/java/io/dropwizard:dropwizard-core',
+    '3rdparty/java/io/dropwizard:dropwizard-testing'
   ],
   resources = [
     'src/main/resources'
