@@ -5,7 +5,7 @@ import io.dropwizard.testing.junit.ResourceTestRule;
 import org.junit.ClassRule;
 import org.junit.Test;
 
-import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by manasapte on 7/6/16.
@@ -22,7 +22,8 @@ public class NameResourceTest {
 
     @Test
     public void testGetMsg() {
-        assertThat(resources.client().target("/name").request().get(NameResponse.class))
-                .isEqualTo(msg);
+        NameResponse response = resources.client().target("/name").request().get(NameResponse.class);
+        assertEquals(response.getCaller(), "caller");
+        assertEquals(response.getName(), "testString");
     }
 }
