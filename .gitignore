@@ -16,4 +16,4 @@ hs_err_pid*
 dist
 .pids
 .pants.workdir.file_lock
-
+.idea
