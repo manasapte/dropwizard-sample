@@ -10,6 +10,6 @@ target(
   name = 'test',
   description = 'junit tests',
   dependencies = [
-    'src/main/java/com/manasapte/sample'
+    'src/main/java/com/manasapte/sample:sample'
   ]
 )
